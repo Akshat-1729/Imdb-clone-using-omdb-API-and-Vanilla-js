@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(10deg,rgb(28, 13, 89),black);
+    height: 100vh;
+}
+.ib{
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ak{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(194, 239, 245);
+    font-size: 50px;
+}
+.cine{
+    color: rgb(16, 105, 43);
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+header{
+    margin-left: 50%;
+}
+#search-section{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 26px;
+}
+#input-text{
+    display: block;
+    width:100%;
+    height: 35px;
+    font-size: 20px;
+    font-family:cursive;
+    background-color:rgb(27, 12, 89);
+    letter-spacing: 1px;
+    padding-left: 7px;
+    color: rgb(249, 229, 229);
+    caret-color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 12px 1px rgb(0, 174, 255);
+    transition: 0.1s ease-in-out;
+}
+#input-text:hover{
+    background-color:rgb(29, 12, 97);
+    transform: scale(1.05);
+    
+}
+#movie-name{
+    color: rgb(4, 130, 16);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+::placeholder{
+    font-size: 22px;
+    padding-left: 5px;
+    color: rgba(0, 255, 255, 0.224);
+}
+#search-button{
+    margin-top: 13px;
+    margin-left: 50%;
+    width: 150px;
+    height: 30px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:500;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    background-color: rgb(184, 19, 132);
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+#search-button:hover{
+    background-color: rgb(166, 14, 118);
+    
+    
+}
