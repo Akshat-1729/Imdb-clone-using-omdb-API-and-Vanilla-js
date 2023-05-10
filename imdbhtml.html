@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My IMDB</title>
     <link rel="stylesheet" href="imdbStyle.css">
+    <script src="https://kit.fontawesome.com/fb030a63a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -20,8 +21,122 @@
                 <label for="movie" id="movie-name">Movie Name</label>
                 <input type="text" id="input-text" placeholder="Search movie here..">
             </div>
-            <div>
-                <button id="search-button">Search</button>
+            <div class="buttons">
+                <button class="search-button" id="search">Search</button>
+                <button class="search-button" id="favourites">Favourites</button>
+            </div>
+            <div id="movie-list-box">
+                <!-- <div class="movies">
+                    <div class="movie-poster">
+                        <img id="poster" src="tamasha.jpg" alt="">
+                    </div>
+                    <div class="movie-details">
+                        <div class="movie-title">
+                            <h4 style="color: rgb(0, 171, 54);">Title:</h4>
+                            <h4 id="title">Tamasha</h4>
+                        </div>
+                        <div class="movie-year">
+                            <h4 style="color: rgb(0, 171, 54);">Year:</h4>
+                            <h4 id="year">2015</h4>
+                        </div>
+                        <div class="movie-director">
+                            <h4 style="color: rgb(0, 171, 54);">Director:</h4>
+                            <h4 id="director">Imtiaz Ali</h4>
+                        </div>
+                        <div class="movie-genre">
+                            <h4 style="color: rgb(0, 171, 54);">Genre:</h4>
+                            <h4 id="genre">Romance, Comedy</h4>
+                        </div>
+                    </div>
+                    <div class="fav">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div> -->
+            </div>
+            <div id="selected-movie">
+                <!-- <div class="selected-poster">
+                    <img src="tamasha.jpg" alt="">
+                </div>
+                <div class="selected-details">
+                    <div class="box">
+                        <div class="selec-title">
+                            <h3>
+                            Title:
+                            </h3>
+                        </div>
+                        <div class="title-name">
+                            <h3>Tamasha</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="selec-title">
+                            <h3>
+                            Year:
+                            </h3>
+                        </div>
+                        <div class="title-name">
+                            <h3>2015</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="selec-title">
+                            <h3>
+                            Director:
+                            </h3>
+                        </div>
+                        <div class="title-name">
+                            <h3>imtiaaz</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="plot">
+                            <h3>
+                            Genre:
+                            </h3>
+                        </div>
+                        <div class="actors">
+                            <h4>James Le Gros, Maura Tierney, Christopher Walken</h4>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="plot">
+                            <h3>
+                            plot:
+                            </h3>
+                        </div>
+                        <div class="plot-text">
+                            <h4>In a modernized retelling of \"MacBeth\" set in 1970s suburban Pennsylvania, Joe McBeth, an unambitious hamburger stand employee, is driven to success by his scheming wife.</h4>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="selec-title">
+                            <h3>
+                            imdbratig:
+                            </h3>
+                        </div>
+                        <div class="title-name">
+                            <h3>4.3</h3>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="selec-title">
+                            <h3>
+                            genre:
+                            </h3>
+                        </div>
+                        <div class="title-name">
+                            <h3>Comedy, Crime","Director</h3>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div id="error">
+                    <img src="err.jpg" alt="">
+            </div>
+            <div class="favour">
+                <div class="fav-list">
+                    <img src="tamasha.jpg" alt="">
+                </div>
             </div>
         </section>
     </main>

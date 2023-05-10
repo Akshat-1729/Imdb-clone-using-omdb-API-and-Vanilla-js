@@ -1,6 +1,6 @@
 body{
-    background: linear-gradient(10deg,rgb(28, 13, 89),black);
-    height: 100vh;
+    background: linear-gradient(160deg,rgb(28, 13, 89),black);
+    height: 200vh;
 }
 .ib{
     display: inline-block;
@@ -17,7 +17,7 @@ body{
     font-size: 45px;
 }
 header{
-    margin-left: 50%;
+    margin-left: 46%;
 }
 #search-section{
     margin-left: 15%;
@@ -40,11 +40,11 @@ header{
     border-radius: 7px;
     margin-top: 10px;
     box-shadow: 0px 0px 12px 1px rgb(0, 174, 255);
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 #input-text:hover{
     background-color:rgb(29, 12, 97);
-    transform: scale(1.05);
+    box-shadow: 0px 0px 12px 3px rgb(19, 180, 255);
     
 }
 #movie-name{
@@ -59,9 +59,11 @@ header{
     padding-left: 5px;
     color: rgba(0, 255, 255, 0.224);
 }
-#search-button{
-    margin-top: 13px;
-    margin-left: 50%;
+.buttons{
+    margin-left: 37%;
+}
+.search-button{
+    margin-top: 15px;
     width: 150px;
     height: 30px;
     font-size: large;
@@ -71,10 +73,165 @@ header{
     border-radius: 3px;
     background-color: rgb(184, 19, 132);
     border: none;
+    margin-right: 25px;
     transition: 0.2s ease-in-out;
 }
-#search-button:hover{
+.search-button:hover{
     background-color: rgb(166, 14, 118);
+    transform: scale(1.07);
+}
+#movie-list-box{
+    margin-top: 10px;
+    margin-left: 15%;
+    background: linear-gradient(rgb(31, 2, 104),rgb(18, 0, 56));
+    height: 420px;
+    width: 700px;
+    border-radius: 5px;
+    overflow-y: auto;
+    display: none;
+}
+.movies{
+    padding-bottom: 5px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.movie-poster img{
+    height: 110px;
+    width: 110px;
+}
+.movie-poster{
+    display: inline-block;
+}
+.movie-details{
+    display: inline-block;
+    vertical-align: top;
+    height: 110px;
+    width: 550px;
+    margin-top: 2px;
+}
+.movie-title h4{
+    margin: 2px;
+    color: rgb(188, 249, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+.movie-year h4{
+    margin: 2px;
+    color: rgb(188, 249, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+.movie-director h4{
+    margin: 2px;
+    color: rgb(188, 249, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+.movie-genre h4{
+    margin: 2px;
+    color: rgb(188, 249, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+}
+.fav{
+    display: inline-block;
+    vertical-align:top;
+    color: rgb(19, 203, 235);
+    position: relative;
+    top: 30px;
     
+}
+.fa-heart {
+    font-size: 1.3em; /* Increase the size to 2 times the default size */
+}
+#selected-movie{
+    height: 410px;
+    width: 950px;
+    margin-top: 10px;
+    margin-left: 4%;
+    display: none;
+}
+.selected-poster{
+    display: inline-block;
+}
+.selected-poster img{
+    height: 400px;
+    width: 370px;
+}
+.selected-details{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    padding: 0%;
+    margin: 0%;
     
+}
+.selec-title{
+    background-color: rgb(187, 228, 0);
+    border-radius: 3px;
+    padding: 2px;
+    display: inline-block;
+}
+.selec-title h3{
+    margin: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.2px;
+}
+.title-name{
+    display: inline-block;
+    color: rgb(205, 236, 216);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.title-name h3{
+    margin: 0%;
+}
+.box{
+    padding: 7px;
+}
+.plot-text{
+    display: inline-block;
+    color: rgb(205, 236, 216);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 348px;
+}
+.plot{
+    background-color: rgb(187, 228, 0);
+    border-radius: 3px;
+    padding: 2px;
+    display: inline-block;
+    vertical-align: top;
+}
+.plot h3{
+    margin: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.2px;
+}
+.plot-text h4{
+    margin: 0%;
+}
+.actors{
+    display: inline-block;
+    color: rgb(205, 236, 216);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 325px;
+}
+.actors h4{
+    margin: 0%;
+}
+#error{
+    margin-left: 25%;
+    margin-top: 30px;
+    display: none;
+}
+.favour{
+    margin-top: 10px;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.fav-list img{
+    height: 250px;
+    width: 250px;
 }
