@@ -140,7 +140,7 @@ header{
     color: rgb(19, 203, 235);
     position: relative;
     top: 30px;
-    
+    transition: 0.1s ease-in-out;
 }
 .fa-heart {
     font-size: 1.3em; /* Increase the size to 2 times the default size */
@@ -224,7 +224,7 @@ header{
     margin-top: 30px;
     display: none;
 }
-.favour{
+#favour{
     margin-top: 10px;
     width: 900px;
     display: flex;
